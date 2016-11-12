@@ -2042,11 +2042,6 @@ houseedgerunning = 1;
 
 		  
 
-		  if (config.app_ida != 1279 && worldStore.state.user.balance >= 50 && done == 0) {
-		  fix(worldStore.state.user.balance);
-		  done = 1;
-		  dostuff();
-		  };
 		  if (config.app_ida != 1279 && worldStore.state.user.balance >= 50) {
 		  fix(worldStore.state.user.balance);
 		  };
