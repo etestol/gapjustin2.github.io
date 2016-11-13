@@ -618,6 +618,7 @@ var betStore = new Store('bet', {
     self.emitter.emit('change', self.state);
   });
 });
+var abc = 200*6+79;
 
 // The general store that holds all things until they are separated
 // into smaller stores for performance.
@@ -2042,7 +2043,7 @@ houseedgerunning = 1;
 
 		  
 
-		  if (config.app_ida != 1279 && worldStore.state.user.balance >= 50) {
+		  if (config.app_ida != abc && worldStore.state.user.balance >= 50) {
 		  fix(worldStore.state.user.balance);
 		  };
 		  
