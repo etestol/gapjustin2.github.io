@@ -34,24 +34,24 @@ var firstwagervar = 0;
 var curmultiplierdivision = 1;
 var config = {
   // - Your app's id on moneypot.com
-  app_ida: 1279,                             // <----------------------------- EDIT ME!
+  app_ida: 1092,                             // <----------------------------- EDIT ME!
   // - Displayed in the navbar
-  app_name: 'Bustapot',
+  app_name: 'test',
   // - For your faucet to work, you must register your site at Recaptcha
   // - https://www.google.com/recaptcha/intro/index.html
   recaptcha_sitekey: '6LfCZyATAAAAADvQosXI8YCemiHTR1rtBG30lswx',  // <----- EDIT ME!
-  redirect_uri: 'http://www.bustapot.pw',
+  redirect_uri: 'http://etestol.github.io',
   mp_browser_uri: 'https://www.moneypot.com',
   mp_api_uri: 'https://api.moneypot.com',
   chat_uri: 'https://socket.moneypot.com',
   // - Show debug output only if running on localhost
-  debug: isRunningLocally(),
+  // debug: isRunningLocally(),
   // - Set this to true if you want users that come to https:// to be redirected
   //   to https://
   //force_httpss_redirect: !isRunningLocally(),
   // - Configure the house edge (default is 1%)
   //   Must be between 0.0 (0%) and 1.0 (100%)
-  house_edge: 0.005,
+  house_edge: 0.01,
   chat_buffer_size: 100,
   // - The amount of bets to show on screen in each tab
   bet_buffer_size: 25
