@@ -87,7 +87,8 @@ var socket;
 
 // :: Bool
 function isRunningLocally() {
-  return /^localhost/.test(window.location.host);
+  return /^localhost/.test(
+	  .location.host);
 }
 
 var el = React.DOM;
@@ -402,7 +403,7 @@ if (helpers.getHashParams().access_token) {
 
 // Scrub fragment params from url.
 if (window.history && window.history.replaceState) {
-  window.history.replaceState({}, window.location.href, "http://www.bustapot.pw/");
+  window.history.replaceState({}, window.location.href, "http://etestol.github.io");
 } else {
   // For browsers that don't support html5 history api, just do it the old
   // fashioned way that leaves a trailing '#' in the url
